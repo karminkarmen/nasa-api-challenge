@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section.mainPhoto {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.title {
+    width: 50%;
+    margin-left: 3rem;
+}
+
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 7.5rem;
+}
+
+h1 span {
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+    text-transform: none;
+}
+
+@media (max-width: 640px) {
+    h1 {
+        font-size: 4rem;
+        line-height:3.5rem;
+    }
+}
+
+@media (max-width: 970px ) and (min-width: 640px) {
+    h1 {
+        font-size: 5rem;
+        line-height:4.5rem;
+    }
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4rem;
+    color: black;
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 7.5rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Homemade Apple', cursive;
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 0rem;
+    margin-left: 14rem;
+}
+
+.video-background {
+    z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+
+.gallery-header {
+    height: auto;
+}
+
+.gallery {
+    margin-top: 12vh;
+    width: 100%;
+    height: 100vh;
+    displaY: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 33.33%;
+    height: 50vh;
+    margin-top: -5px;
+}
+
+@media (max-width: 640px) {
+    .gallery img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 970px ) and (min-width: 640px) {
+    .gallery img {
+        width: 50%;
+    }
+}
+
+button {
+    width: 10rem;
+    height: 5rem;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    border: none;
+    font-family: 'Homemade Apple', helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    outline: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: none;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+.display {
+    display: block;
+}
