@@ -1,4 +1,4 @@
-# nasa-api-challenge
+# nasa-api-challenge :earth_americas:
 
 Gallery with pictures of Mars from NASA Api. Project created during CodersLab course.
 
